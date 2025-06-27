@@ -26,7 +26,7 @@ jobs:
       run: |
         ${GITHUB_WORKSPACE}/sl --version
         ${GITHUB_WORKSPACE}/sl analyze --strict --wait \
-          --app shiftleft-java-demo \
+          --app shiftleft-java-example \
           --tag branch=${{ github.head_ref }} \
           --javasrc --container 18fgsa/s3-resource .
       env:
